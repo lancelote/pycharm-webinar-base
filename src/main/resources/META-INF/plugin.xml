@@ -17,7 +17,7 @@
 
     <depends>com.intellij.modules.lang</depends>
     <!-- Depend on the Python plugin. Also works in the different editions of PyCharm. -->
-    <depends>PythonCore</depends>
+    <depends>Pythonid</depends>
 
     <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
     <idea-version since-build="183.0"/>
@@ -28,6 +28,6 @@
             Uncomment the line below and implement the implementationClass.
             There's a quick-fix on 'webinar.FlakeInspectionSuppressor' to quickly create the class.
         -->
-        <!--<lang.inspectionSuppressor language="Python" implementationClass="webinar.FlakeInspectionSuppressor" />-->
+        <lang.inspectionSuppressor language="Python" implementationClass="webinar.FlakeInspectionSuppressor" />
     </extensions>
 </idea-plugin>
